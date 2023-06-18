@@ -1,13 +1,17 @@
-let boldText = document.getElementsByTagName("strong");
+let boldTexts = document.getElementsByTagName("strong");
 function highlight() {
     //Write your code here
-	boldText.style.color = "green";
+	for (let boldText of boldTexts) {
+		boldText.style.color = "green";
+	}
 
 }
 
 
 function return_normal() {
     //Write your code here
-	boldText.style.color = "#ffff";
+	for (let boldText of boldTexts) {
+		boldText.style.color = "black";
+	}
     
 }
